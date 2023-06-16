@@ -1,0 +1,31 @@
+#main{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+body{
+    height: 100vh;
+    margin: 0;
+}
+.jewelery-section{
+    position: relative;
+    top: 5em;
+}
+.container img:hover{
+    height:250px;
+    width: 100%;
+    bottom: 10px;position: relative;
+}
+.view,.edit{
+   background-color: transparent;
+   border: 0.02em solid rgb(179, 153, 4);
+   border-radius: 0.2em;
+}
+.jewelery-section .view:hover,.jewelery-section .edit:hover{
+    background-color: rgb(239, 239, 141);
+    color: rgb(5, 5, 5);
+    width: 5em;
+};
+
+
+

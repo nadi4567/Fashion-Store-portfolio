@@ -1,0 +1,54 @@
+
+.second-part .img-clif{
+    position: absolute;
+    top: 0;
+    width: 20rem;
+    height: 20rem;
+    right: 0;
+    transform: rotate(-30deg);
+    
+    background-blend-mode: multiply;
+    box-sizing: border-box;opacity: 0.7;
+    box-shadow: 1em 1em 1rem 1rem rgb(192, 211, 217);
+}
+.main-sec{
+    position: relative;
+}
+.second-part .left-img{
+    position: absolute;
+    left: 0;
+    bottom: 5em;
+    width: 20em;opacity: 0.7;
+    height: 20em;z-index: -0.3;
+    box-sizing: border-box;
+    transform: rotate(30deg);
+    box-shadow: 1em 1em 1rem 0.5rem rgb(179, 210, 229);
+}
+#shop-now{
+  border: 0.02em solid rgb(158, 218, 237);
+  padding: 0.4em;
+  color:rgb(117, 200, 252) ;
+  border-radius: 0.4em;
+}
+
+.main-sec h1{
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0.2rem 0.01em rgb(152, 189, 189);
+    color: rgb(12, 11, 11);
+}
+@media(max-width:1080px){
+    .second-part .left-img{
+        opacity: 0;
+    }
+    .second-part .img-clif{
+        opacity: 0;
+    }
+    .main-sec{
+        background-image: url(./cl_img/croptoop.png);
+        background-clip: border-box;
+        background-size: 100%;
+        color: white;
+        object-fit: cover;
+        
+    }
+}

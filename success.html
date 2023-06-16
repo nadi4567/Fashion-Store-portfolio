@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .main-container{
+            display: flex;
+            
+            flex-direction: column;
+            gap: 20em;justify-content: center;
+            align-items: center;
+            height: 20rem;
+            
+        }
+        p{
+            background-color:rgb(172, 230, 250);
+            padding: 0.5em 2em;border-radius: 0.2em;
+            text-align: center;font-size: larger;
+        }
+        p>img{
+            width: 1em;
+            margin-left: 0.4em;
+        }
+        img{
+            width: 2em;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <section id="main" class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary main">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold fs-2 " href="#main"
+              style="
+                font-family: 'Playfair Display', serif;
+        text-shadow: 0.2rem 0.01em rgb(208, 235, 235);
+        color: rgb(88, 183, 242);"> <span>
+                <img src="./cl_img/shop (1).svg" style="height: 2rem; width: 2rem; margin: 1rem;"/></span>
+                NADI's Fashion House
+               
+              </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active home" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link about" href="./index.html#about-us">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./clot.html">Clothes</a></li>
+                      <li><a class="dropdown-item" href="./bag.html">Bag</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./jewelery.html">Jewelery</a></li>
+                    </ul>
+                  </li>
+                
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+       </section>
+
+<!---->
+    <div class="main-container">
+       <div>
+         <img src="./cl_img/cart3.svg" alt="bag"/>
+       </div>
+       <div class="purchase">
+        <p>purchase complete<img src="./cl_img/check-circle.svg"/></p>
+       </div>
+    </div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+     $(document).ready(function(){
+         $(".main-container").css({"transition":"all 1s linear 400ms","gap":"0.4em"})
+     });
+    </script>
+</body>
+</html>

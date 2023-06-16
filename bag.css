@@ -1,0 +1,98 @@
+body{
+    height: 100vh;
+}
+.footer{
+    position: relative;
+    top:200px;
+    width: 100%;padding: 10px;background-color: rgb(151, 206, 225);
+}
+.fix{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.grid-container{
+    display: flex;position: relative;
+    flex-direction: column;
+   top: 7em;
+    align-items: center;
+    gap: 2em;font-family: 'Roboto Mono', monospace;
+}
+.row-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+.up{
+    width: 20em;
+    height: 35em;
+    display: flex;padding: 1em;box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;justify-content: space-between;border: 0.003em solid rgb(243, 240, 240);
+    box-shadow:  -0.2em 0.1em 1em rgb(210, 233, 240);
+}
+.img-container{
+    width: 100%;
+    height: 50%;
+    
+}
+.img-container p{
+    background-color: rgb(143, 222, 249);
+    width: 50px;
+    height:50px;
+    text-align: center;
+    border-radius: 50%;font-size: x-small;
+    padding-top: 1.5em;border:0.01em solid rgb(236, 236, 158);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 400ms linear 0.4s;
+}
+.btn-container {
+   width: 100%;
+   align-items: center;
+   display: flex;flex-direction: column;
+}
+.btn-container a{
+    align-self: flex-end;
+    width: 45%;margin-right: 2em;
+    height: 2em;
+    
+}
+.btn-container button{
+    background-color:transparent;width: 100%;
+    height: 100%;
+    border: 0.01em solid rgb(173, 225, 243);
+    transition: all 0.45s ease-in-out;
+    font-size: larger;font-weight: lighter;
+}
+.btn-container button:hover{
+    background-color: rgb(156, 220, 241);
+    border-radius: 0.3em;
+    height: 2em;width: 4em;text-transform: capitalize;
+}
+img:hover{
+    height: 20em;
+    width: 20em;
+}
+
+@media(max-width:1020px){
+    .grid-container{
+        padding: 2em;
+    }
+    .row-sec{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .up{
+        width: 100%;
+
+    }
+    
+}
+

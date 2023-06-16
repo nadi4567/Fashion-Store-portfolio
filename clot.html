@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clothes section</title>
+    <link rel="stylesheet" href="./cloth.css"/>
+</head>
+<body>
+<ul class="nav flex-column list-item">
+  <li class="nav-item child-list">
+    <a class="nav-link active" aria-current="page" href="./index.html">home</a>
+  </li>
+  <li class="nav-item child-list">
+    <a class="nav-link" href="./jewelery.html">jellewery</a>
+  </li>
+  <li class="nav-item child-list">
+    <a class="nav-link" href="./bag.html">bag</a>
+  </li>
+  
+</ul>
+
+
+    <div id="first-row">
+
+    
+    <div class="container" >
+        <div class="img-container">
+           <img src="./cl_img/jean1.jpg" onmouseover="bigImg(this)" onmouseout="normanlImg(this)"/>
+        </div>
+        <div class="price-container">
+             <p>$230.44</p>
+             <a><button class="vi-btn">Add to cart</button></a>
+        </div>
+    </div>
+    
+    <div class="container" >
+        <div class="img-container">
+           <img src="./cl_img/jean2.jpg" onmouseover="bigImg(this)" onmouseout="normanlImg(this)"/>
+        </div>
+        <div class="price-container">
+             <p>$6700.00</p>
+             <a><button class="vi-btn">Add to cart</button></a>
+        </div>
+    </div>
+
+    <div class="container" >
+        <div class="img-container">
+           <img src="./cl_img/bella.jpg" onmouseover="bigImg(this)" onmouseout="normanlImg(this)"/>
+        </div>
+        <div class="price-container">
+             <p>$4500.00</p>
+             <a><button class="vi-btn">Add to cart</button></a>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <script>
+
+        function bigImg(x){
+           x.style.height = "140%";
+           x.style.objectFit = "contain";
+          
+        }
+        function normanlImg(x){
+            x.style.height ="100%";
+            
+        }
+
+       
+        
+        for (var i = 0;i<=3;i++){
+            document.querySelectorAll(".vi-btn")[i].addEventListener("click",function(){
+            this.innerHTML = "Purchased";
+            this.style.width = "10em";
+        })
+    }
+       
+        
+    </script>
+</body>
+</html> 
